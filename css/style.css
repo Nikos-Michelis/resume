@@ -606,7 +606,7 @@ ul.timeline > li.timeline-inverted > .timeline-panel:after {
 }
 .pie::before {
   inset: 0;
-  background: radial-gradient(farthest-side, var(--c) 98%, var(--clr-dark-cosmos-300)) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p) * 1%), var(--clr-dark-cosmos-300) 0);
+  background: radial-gradient(farthest-side, var(--c) 115%, var(--clr-dark-cosmos-300)) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p) * 1%), var(--clr-dark-cosmos-300) 0);
   -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
   mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
