@@ -89,7 +89,7 @@
                     </p>
                     <div class="flex">
                         <a href="assets/Michelis-Nikolaos-CV.pdf" download class="btn btn-primary btn-small bg-secondary-300 ">
-                            <i class="fa-solid fa-download"></i> Download Here!
+                            <i class="fa-solid fa-download"></i> Download CV
                         </a>
                     </div>
                 </div>
@@ -252,6 +252,12 @@
                     </span>
                     <span class="fs-small-300 clr-dark-cosmos-300 text-center">60%</span>
                 </div>
+                <div class="pie animate" style="--p:65;--c:var(--clr-star-300)">
+                    <div class="fs-small-300 clr-dark-cosmos-300 text-center flex flex-column">
+                        <img src="assets/c-programming.png" alt="c programming">
+                    </div>
+                    <span class="fs-small-300 clr-dark-cosmos-300 text-center">65%</span>
+                </div>
                 <div class="pie animate" style="--p:75;--c:var(--clr-star-300)">
                     <span class="fs-small-300 clr-dark-cosmos-300 text-center flex flex-column">
                         <i class="fa-brands fa-java fa-2x"></i>Java
@@ -281,6 +287,12 @@
                         <i class="fa-brands fa-html5 fa-2x"></i>HTML
                     </span>
                     <span class="fs-small-300 clr-dark-cosmos-300 text-center">90%</span>
+                </div>
+                <div class="pie animate" style="--p:70;--c:var(--clr-star-300)">
+                    <span class="fs-small-300 clr-dark-cosmos-300 text-center flex flex-column">
+                       <i class="fa-solid fa-satellite fa-2x"></i>Networking
+                    </span>
+                    <span class="fs-small-300 clr-dark-cosmos-300 text-center">70%</span>
                 </div>
             </div>
         </div>
@@ -373,7 +385,28 @@
             </p>
         </div>
     </footer>
+    <div>
+        <Button id="goTopBtn" class="btn-goTop goTopHidden">
+            <i class="btn-goTop__text fas fa-chevron-up"></i>
+        </Button>
+    </div>
     <script>
+        "use strict";
+        const goTopBtn = document.getElementById("goTopBtn");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                goTopBtn.classList.remove("goTopHidden");
+            } else {
+                goTopBtn.classList.add("goTopHidden");
+            }
+        };
+
+        goTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
         document.getElementById("displayYear").textContent = new Date().getFullYear();
     </script>
 </div>
