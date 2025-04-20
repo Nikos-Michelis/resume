@@ -395,9 +395,9 @@
         const goTopBtn = document.getElementById("goTopBtn");
         window.onscroll = function () {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                goTopBtn.classList.remove("goTopHidden");
+                goTopBtn.classList.replace("goTopHidden", "btn-goTop");
             } else {
-                goTopBtn.classList.add("goTopHidden");
+                goTopBtn.classList.replace("btn-goTop", "goTopHidden");
             }
         };
 
